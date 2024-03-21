@@ -1,0 +1,18 @@
+{
+    "name": "database",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "database",
+    "workspaceFolder": "/flask_db",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#346c9c",
+                    "titleBar.activeForeground": "#fccc3f",
+                    "activityBar.background": "#000000",
+                    "activityBar.foreground": "#ff357c"
+                }
+            }
+        }
+    }
+}

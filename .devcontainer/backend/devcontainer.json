@@ -1,0 +1,21 @@
+{
+    "name": "backend",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "backend",
+    "workspaceFolder": "/usr/src/app",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#346c9c",
+                    "titleBar.activeForeground": "#fccc3f",
+                    "activityBar.background": "#000000",
+                    "activityBar.foreground": "#50ff35"
+                }
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}

@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    backend:
+        build:
+            context: ../../
+            dockerfile: .devcontainer/backend/Dockerfile
+        environment:
+            PYTHONPATH: /usr/src/app
+            TZ: Asia/Tokyo
+        # env_file:
+        #     - ./envfile
+        #     - ../.env
+        volumes:
+            - scripts:/usr/src/app
+            - mnt:/usr/src/mnt
+        ports:
+            - 8000:8000
+        command: python backend/api.py
+        privileged: true
+        tty: true
+
+volumes:
+    scripts:
+        driver: local
+        driver_opts:
+            type: none
+            o: bind
+            device: "../../"
+    mnt:
+        

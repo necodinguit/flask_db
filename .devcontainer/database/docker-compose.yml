@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+    database:
+        build:
+            context: ../../
+            dockerfile: .devcontainer/database/Dockerfile
+        environment:
+            PYTHONPATH: /flask_db
+            TZ: Asia/Tokyo
+        volumes:
+            - scripts:/flask_db
+            - mnt:/usr/src/mnt
+
+        privileged: true
+        tty: true
+
+volumes:
+    scripts:
+        driver: local
+        driver_opts:
+            type: none
+            o: bind
+            device: "../../"
+    mnt:
+        
