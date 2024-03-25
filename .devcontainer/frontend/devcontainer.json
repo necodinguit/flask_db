@@ -1,0 +1,18 @@
+{
+    "name": "frontend",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "frontend",
+    "workspaceFolder": "/usr/src/app",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "workbench.colorCustomizations": {
+                    "titleBar.activeBackground": "#2c2c2c",
+                    "titleBar.activeForeground": "#6cc444",
+                    "activityBar.background": "#000000",
+                    "activityBar.foreground": "#61ff35"
+                }
+            }
+        }
+    }
+}
